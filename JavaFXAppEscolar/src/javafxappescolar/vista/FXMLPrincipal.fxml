@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxappescolar.controlador.FXMLPrincipalController">
+    <children>
+        <Label layoutX="68.0" layoutY="54.0" text="Bienvenido(a)"/>
+        <Label id="lbNombre" fx:id="lbNombre" layoutX="68.0" layoutY="94.0" text="lbNombre"/>
+        <Label id="lbUsuario" fx:id="lbUsuario" layoutX="68.0" layoutY="138.0" text="lbUsuario"/>
+        <Button layoutX="453.0" layoutY="81.0" mnemonicParsing="false" onAction="#btnClicCerrarSesion"
+                text="Cerrar Sesion"/>
+        <Button layoutX="69.0" layoutY="294.0" mnemonicParsing="false" onAction="#clicBtnAdminAlumno"
+                text="Administrador de Alumnos"/>
+    </children>
+</AnchorPane>

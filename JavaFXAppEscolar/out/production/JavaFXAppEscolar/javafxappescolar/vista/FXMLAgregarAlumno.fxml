@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="javafxappescolar.controlador.FXMLAgregarAlumnoController">
+    <children>
+        <Button layoutX="758.0" layoutY="552.0" mnemonicParsing="false" onAction="#clicAgregar" text="Agregar">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+        <Button layoutX="854.0" layoutY="552.0" mnemonicParsing="false" onAction="#clicCancelar" text="Cancelar">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+        <Label layoutX="46.0" layoutY="56.0" prefHeight="52.0" prefWidth="274.0" text="Agregar alumno">
+            <font>
+                <Font name="JetBrains Mono SemiBold" size="29.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="tfNombres" layoutX="46.0" layoutY="223.0" prefHeight="40.0" prefWidth="274.0">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </TextField>
+        <Label layoutX="46.0" layoutY="176.0" text="Nombre(s)">
+            <font>
+                <Font name="JetBrains Mono SemiBold" size="22.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="tfApPaterno" layoutX="365.0" layoutY="223.0" prefHeight="40.0" prefWidth="274.0">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </TextField>
+        <Label layoutX="365.0" layoutY="176.0" text="Apellido Paterno">
+            <font>
+                <Font name="JetBrains Mono SemiBold" size="22.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="tfApMaterno" layoutX="680.0" layoutY="223.0" prefHeight="40.0" prefWidth="274.0">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </TextField>
+        <Label layoutX="680.0" layoutY="176.0" text="Apellido Materno">
+            <font>
+                <Font name="JetBrains Mono SemiBold" size="22.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="tfMatricula" layoutX="46.0" layoutY="346.0" prefHeight="40.0" prefWidth="274.0">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </TextField>
+        <Label layoutX="46.0" layoutY="299.0" text="Matricula">
+            <font>
+                <Font name="JetBrains Mono SemiBold" size="22.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="tfEmail" layoutX="365.0" layoutY="346.0" prefHeight="40.0" prefWidth="274.0">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </TextField>
+        <Label layoutX="365.0" layoutY="299.0" text="Email">
+            <font>
+                <Font name="JetBrains Mono SemiBold" size="22.0"/>
+            </font>
+        </Label>
+        <Label layoutX="691.0" layoutY="303.0" text="Fecha nacimiento">
+            <font>
+                <Font name="JetBrains Mono SemiBold" size="22.0"/>
+            </font>
+        </Label>
+        <DatePicker fx:id="dpFechaNacimiento" layoutX="680.0" layoutY="346.0" prefHeight="40.0" prefWidth="274.0"/>
+        <Label layoutX="363.0" layoutY="429.0" text="Carrera">
+            <font>
+                <Font name="JetBrains Mono SemiBold" size="22.0"/>
+            </font>
+        </Label>
+        <Label fx:id="lbErrorNombre" layoutX="46.0" layoutY="263.0" prefHeight="39.0" prefWidth="274.0"
+               textAlignment="CENTER" textFill="RED">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label fx:id="lbErrorApPaterno" layoutX="363.0" layoutY="259.0" prefHeight="39.0" prefWidth="274.0"
+               textAlignment="CENTER" textFill="RED">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label fx:id="lbErrorApMaterno" layoutX="680.0" layoutY="263.0" prefHeight="39.0" prefWidth="274.0"
+               textAlignment="CENTER" textFill="RED">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label fx:id="lbErrorFechaNacimiento" layoutX="680.0" layoutY="386.0" prefHeight="39.0" prefWidth="274.0"
+               textAlignment="CENTER" textFill="RED">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label fx:id="lbErrorEmail" layoutX="363.0" layoutY="386.0" prefHeight="39.0" prefWidth="274.0"
+               textAlignment="CENTER" textFill="RED">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label fx:id="lbErrorMatricula" layoutX="46.0" layoutY="386.0" prefHeight="39.0" prefWidth="274.0"
+               textAlignment="CENTER" textFill="RED">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label layoutX="46.0" layoutY="428.0" text="Facultad">
+            <font>
+                <Font name="JetBrains Mono SemiBold" size="22.0"/>
+            </font>
+        </Label>
+        <ComboBox fx:id="cbCarrera" layoutX="363.0" layoutY="475.0" prefHeight="39.0" prefWidth="274.0"/>
+        <ComboBox fx:id="cbFacultad" layoutX="46.0" layoutY="472.0" prefHeight="39.0" prefWidth="274.0"/>
+        <Button layoutX="693.0" layoutY="475.0" mnemonicParsing="false" onAction="#btnSeleccionarFoto" prefHeight="39.0"
+                prefWidth="248.0" text="Seleccionar foto"/>
+        <ImageView fx:id="ivFotoAlumno" fitHeight="134.0" fitWidth="274.0" layoutX="679.0" layoutY="30.0"
+                   pickOnBounds="true" preserveRatio="true"/>
+    </children>
+</AnchorPane>
